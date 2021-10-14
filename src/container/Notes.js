@@ -9,7 +9,7 @@ function Notes() {
     return (
         <div>
             {
-               
+               Object.keys(products).length===0?<h1>...Loading</h1>:
                 products.map((data)=>{
                 return  <Noteitem data={data}/>
                 })
