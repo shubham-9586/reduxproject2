@@ -3,13 +3,14 @@ import './App.css';
 
 import { useSelector } from 'react-redux'
 import axios from 'axios';
-import item from './container/Item';
-
+import Item from './container/Item';
+import Navbar from './container/Navbar';
 function App() {
 
   return (
     <div >
- <item/>
+      <Navbar/>
+ <Item/>
     </div>
   );
 }
