@@ -17,7 +17,6 @@ export const select_Product=(product)=>{
     }
 }
 
-
 export const remove_product=()=>{
     return {
         type:actionTypes.remove_product
