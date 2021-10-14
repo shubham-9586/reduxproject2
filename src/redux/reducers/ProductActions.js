@@ -1,5 +1,3 @@
-import actionTypes from "../constans/ActionsType";
-
 
 const initialState={
     products:[]
@@ -7,7 +5,7 @@ const initialState={
 
 export const productreducer= (state=initialState,{type ,payload})=>{
     
-    if(type===actionTypes.set_Product)
+    if(type==='set_Product')
     {
         return {...state,products:payload};
     }
@@ -17,13 +15,12 @@ export const productreducer= (state=initialState,{type ,payload})=>{
     }
 }
 
-
 export const selectedproductreducer =(state={},{type,payload})=>{
-    if(type===actionTypes.select_Product)
+    if(type==='select_Product')
     {
         return {...state,...payload};
     }
-    else if(type===actionTypes.remove_product)
+    else if(type==='remove_product')
     {
         return {};
     }
